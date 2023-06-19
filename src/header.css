@@ -1,0 +1,135 @@
+/*  color: */
+*{
+  font-family: 'Crimson Pro', serif;
+}
+
+@font-face {
+  font-family: Amigos;
+  src: url('./sapniii//ethnocentric/ethnocentric\ rg\ it.otf');
+}
+
+@font-face {
+  font-family: BLKCHCRY;
+  src: url('./sapniii/blackchancery/BLKCHCRY.TTF');
+}
+body{
+  /* background-image: linear-gradient(#F29053, #42c4dc); */
+}
+.Header_Main{
+  width: 100%;
+  height: 100px;
+  /* background: linear-gradient(90deg, #14b4b4 0%, #14c4bc 30%, #14d4c4 65%, #14bcac 100%); */
+  /* background-image: linear-gradient(#14b4b4, #14c4bc); */
+  /* background-image: linear-gradient(#42c4dc, #3c3936); */
+  /* background-color: #537791; */
+  display: flex;
+  /* background: transparent; */
+  position: absolute;
+  z-index: 1000;
+}
+.change-my-color {
+    fill: green;
+  }
+.leftnavbar{
+    width: 20%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightnavbar{
+    width: 80%;
+    /* background-color: rgb(111, 111, 165); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo{
+    width: 40%;
+    height: 20%;
+    font-family: Amigos;
+    font-size: large;
+    color: aliceblue;
+    /* border-radius: 50%; */
+    /* background-color: aliceblue; */
+}
+.right_menu
+{
+
+    width: 32%;
+    color:#E2D784;
+    cursor: pointer;
+}
+
+.hover_style 
+{
+    display: inline-block;
+    position: relative;
+    color:#ffff;
+    font: normal normal 600 20px Poppins;
+    text-decoration: none;
+    font-family: 'Crimson Pro', serif;
+    font-size: 20px;
+    /* font-weight: bolder; */
+  }
+  
+  .hover_style:after
+   {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#25c7dd;
+    transform-origin: bottom right;
+   
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover_style:hover:after
+   {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   
+  }
+
+  .menuStyle{
+    width: 30px;
+    cursor: pointer;
+    transition: margin-top .2s;
+  }
+
+  .menuStyle:hover{
+    margin-top: -10px;
+   
+  }
+
+  .popuMenu{
+    width:300px;
+    height:300px;
+    background-color: #31708E;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 20;
+    right: 0;
+    transition:  all 1s ease-in-out;
+
+  }
+
+  .closeButton{
+    margin-right: 10px;
+    text-align: end;
+    margin-top: 10px;
+    cursor: pointer;
+   
+
+  }
+  @media screen and (max-width: 700px) {
+    .hover_style{
+        font-size: 15px;
+       
+    }
+ }
