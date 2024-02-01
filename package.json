@@ -31,19 +31,10 @@
   },
   "homepage": "https://Geet13579.github.io/dog_compition",
   "scripts": {
-    "start": " concurrently \" react-scripts start\"  \"npm run electron-dev\"  ",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "electron": "set ELECTRON_START_URL=http://localhost:3000.",
-    "electron-dev": "concurrently \"npm run electron\" \"npm run server-start\"",
-    "preelectron-pack": "npm build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build-electron": "mkdir build/electron  & robocopy electron  build/electron /S & robocopy src build/src /S",
-    "package": "electron-builder build --win -c.extraMetadata.main=build/electron/main.cjs --publish never",
-    "server-build": "babel server --out-dir build-server",
-    "server-start": "nodemon --watch server --exec babel-node ./server/server.js"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
