@@ -29,7 +29,7 @@
     "sqlite3": "^5.1.6",
     "web-vitals": "^2.1.0"
   },
-  "homepage": "./",
+  "homepage": "https://Geet13579.github.io/dog_compition",
   "scripts": {
     "start": " concurrently \" react-scripts start\"  \"npm run electron-dev\"  ",
     "test": "react-scripts test",
@@ -38,6 +38,8 @@
     "electron-dev": "concurrently \"npm run electron\" \"npm run server-start\"",
     "preelectron-pack": "npm build",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-electron": "mkdir build/electron  & robocopy electron  build/electron /S & robocopy src build/src /S",
     "package": "electron-builder build --win -c.extraMetadata.main=build/electron/main.cjs --publish never",
     "server-build": "babel server --out-dir build-server",
@@ -62,6 +64,7 @@
     "customize-cra": "^0.2.14",
     "electron": "^9.1.2",
     "electron-builder": "^22.8.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
